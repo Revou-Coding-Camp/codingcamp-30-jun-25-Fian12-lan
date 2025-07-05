@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/script.js" defer></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="font-sans bg-white text-black">
+
+    <!-- Header / Navbar -->
+    <header class="flex items-center justify-between px-6 py-4 border-b sticky top-0 bg-white z-50">
+        <div class="flex items-center">
+            <img src="https://em-content.zobj.net/source/apple/391/nerd-face_1f913.png" alt="logo" class="w-8 h-8 mr-2">
+            <span class="text-lg font-semibold">My Website</span>
+        </div>
+        <nav class="space-x-4">
+            <a href="#home" class="px-4 py-2 border rounded hover:bg-gray-100">Home</a>
+            <a href="#profile" class="px-4 py-2 border rounded hover:bg-gray-100">Our Profile</a>
+            <a href="#portfolio" class="px-4 py-2 border rounded hover:bg-gray-100">Portfolio</a>
+            <a href="#message" class="px-4 py-2 border rounded hover:bg-gray-100">Message Us</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="p-10 text-center">
+        <h1 class="text-2xl font-bold mb-2">Hi, Welcome To Website</h1>
+        <p class="mb-4">Ini adalah website latihan pertama</p>
+        <div
+            class="border border-gray-400 w-full max-w-5xl mx-auto h-[300px] flex items-center justify-center text-gray-400">
+            1366 × 578
+        </div>
+    </section>
+
+    <!-- Our Headquarters Section -->
+    <section id="portfolio" class="py-10 border-t">
+        <h2 class="text-xl font-semibold text-center mb-8">Our Headquarter</h2>
+        <div class="flex justify-center space-x-16">
+            <div class="text-center">
+                <div class="w-24 h-24 rounded-full border mx-auto"></div>
+                <p class="mt-2">Jakarta</p>
+            </div>
+            <div class="text-center">
+                <div class="w-24 h-24 rounded-full border mx-auto"></div>
+                <p class="mt-2">Bandung</p>
+            </div>
+            <div class="text-center">
+                <div class="w-24 h-24 rounded-full border mx-auto"></div>
+                <p class="mt-2">Surabaya</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Message Us Section -->
+    <section id="message" class="py-10 border-t px-6 md:px-20">
+        <h2 class="text-xl font-semibold mb-6">Message Us</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Form -->
+            <form id="contactForm" class="space-y-4">
+                <div>
+                    <label>Nama :</label><br />
+                    <input type="text" id="nama" class="w-full border rounded p-2" />
+                </div>
+                <div>
+                    <label>Tanggal Lahir :</label><br />
+                    <input type="date" id="tanggal" class="w-full border rounded p-2" />
+                </div>
+                <div>
+                    <label>Jenis Kelamin :</label><br />
+                    <label><input type="radio" name="gender" value="Laki-Laki" checked /> Laki-Laki</label>
+                    <label class="ml-4"><input type="radio" name="gender" value="Perempuan" /> Perempuan</label>
+                </div>
+                <div>
+                    <label>Pesan :</label><br />
+                    <textarea id="pesan" class="w-full border rounded p-2" rows="4"></textarea>
+                </div>
+                <button type="submit" class="bg-gray-800 text-white px-6 py-2 rounded">Submit</button>
+            </form>
+
+            <!-- Output -->
+            <div class="border p-4 space-y-2">
+                <p id="profile"><strong>Current time:</strong> <span id="currentTime"></span></p>
+                <p><strong>Nama:</strong> Alfian Hartas Suharno Putro <span id="outNama"></span></p>
+                <p><strong>Tanggal Lahir:</strong> 28 Februari 2003 <span id="outTanggal"></span></p>
+                <p><strong>Jenis Kelamin:</strong> Laki-laki <span id="outGender"></span></p>
+                <p><strong>Pesan:</strong> Saya pemula software engineer <span id="outPesan"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 border-t">
+        Created by RevoU
+    </footer>
+</body>
+
+</html>
